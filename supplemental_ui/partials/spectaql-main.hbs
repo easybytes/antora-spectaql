@@ -1,0 +1,12 @@
+<main>
+    {{> toolbar}}
+    <article class="spectaql">
+        {{#if page.title}}
+            <h1 class="page">{{{page.title}}}</h1>
+        {{/if}}
+        <div id="spectaql">
+        {{{page.contents}}}
+        </div>
+        {{> pagination}}
+    </article>
+</main>

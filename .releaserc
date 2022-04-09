@@ -1,0 +1,48 @@
+{
+  "branches": ["main", "+([0-9])?(.{+([0-9]),x}).x", {"name": "alpha", "prerelease": true}],
+  "plugins": [
+    ["@semantic-release/commit-analyzer", {
+      "preset": "conventionalcommits",
+      "releaseRules": [
+        {
+          "type": "build",
+          "release": false
+        },
+        {
+          "type": "ci",
+          "release": false
+        },
+        {
+          "type": "chore",
+          "release": "patch"
+        },
+        {
+          "type": "docs",
+          "release": "patch"
+        },
+        {
+          "type": "refactor",
+          "release": "patch"
+        },
+        {
+          "type": "style",
+          "release": "patch"
+        },
+        {
+          "type": "test",
+          "release": "patch"
+        }
+      ]
+    }],
+    ["@semantic-release/release-notes-generator", {
+      "preset": "conventionalcommits"
+    }],
+    ["@semantic-release/changelog"],
+    ["@semantic-release/npm"],
+    ["@semantic-release/git", {
+      "assets": ["package.json", "package-lock.json", "CHANGELOG.md"],
+      "message": "release(version): Release ${nextRelease.version} [skip ci]\n\n${nextRelease.notes}"
+    }],
+    ["@semantic-release/github"]
+  ]
+}
