@@ -1,0 +1,58 @@
+{
+  "name": "@easybytes/antora-spectaql",
+  "version": "1.0.0",
+  "description": "An Antora pipeline extension to use SpectaQL to convert a graphql schema definition from a url to html and include in an Antora project.",
+  "license": "MIT",
+  "author": "Brett Bedrin <brett.bedrin@easybytesstudio.com>",
+  "contributors": [],
+  "homepage": "https://github.com/easybytes/antora-spectaql#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/easybytes/antora-spectaql.git"
+  },
+  "bugs": {
+    "url": "https://github.com/easybytes/antora-spectaql/issues"
+  },
+  "main": "lib/index.js",
+  "scripts": {
+    "build": "npm run lint",
+    "lint": "eslint lib/**/*.js",
+    "lint-fix": "eslint lib/**/*.js --fix",
+    "prepare": "husky install",
+    "release": "semantic-release"
+  },
+  "files": [
+    "lib",
+    "supplemental_ui"
+  ],
+  "engines": {
+    "node": ">=12.0.0"
+  },
+  "dependencies": {
+    "@antora/expand-path-helper": "^2.0.0",
+    "cheerio": "^1.0.0-rc.10",
+    "mime-types": "^2.1.35",
+    "spectaql": "^1.0.10",
+    "vinyl": "^2.2.1"
+  },
+  "keywords": [
+    "antora",
+    "antora-component",
+    "antora-extension",
+    "spectaql",
+    "graphql",
+    "documentation"
+  ],
+  "devDependencies": {
+    "@commitlint/cli": "^16.2.3",
+    "@commitlint/config-conventional": "^16.2.1",
+    "eslint": "^7.32.0",
+    "eslint-config-standard": "^16.0.3",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^5.2.0",
+    "husky": "^7.0.4",
+    "semantic-release": "^19.0.2",
+    "semantic-release-npm-github-publish": "^1.5.1"
+  }
+}

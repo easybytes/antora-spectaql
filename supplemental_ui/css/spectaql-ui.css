@@ -1,0 +1,11 @@
+article.spectaql {
+    background-color: #fff;
+    color: #353833;
+    font-family: "DejaVu Sans", Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    box-sizing: content-box;
+}
