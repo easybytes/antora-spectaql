@@ -48,14 +48,17 @@
     "documentation"
   ],
   "devDependencies": {
+    "@asciidoctor/docbook-converter": "^2.0.0",
     "@commitlint/cli": "^16.2.3",
     "@commitlint/config-conventional": "^16.2.1",
+    "asciidoctor": "^2.2.6",
     "eslint": "^7.32.0",
     "eslint-config-standard": "^16.0.3",
     "eslint-plugin-import": "^2.26.0",
     "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-promise": "^5.2.0",
     "husky": "^7.0.4",
+    "node-pandoc": "^0.3.0",
     "semantic-release": "^19.0.2",
     "semantic-release-npm-github-publish": "^1.5.1"
   }

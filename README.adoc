@@ -1,16 +1,19 @@
 = Antora SpectaQL Extension
+:doctype: book
 :description: An Antora pipeline extension to use SpectaQL to convert a graphql schema definition from a url to html and include in an Antora project.
 :package-name: @easybytes/antora-spectaql
 :source-repository: https://github.com/easybytes/antora-spectaql
 :version: 0.0.1
 
-== Description
+== Antora SpectaQL Extension
+
+=== Description
 
 {description}
 
 The code is located at link:{source-repository}[]
 
-== Installation
+=== Installation
 
 Install using npm
 
@@ -28,11 +31,11 @@ pipeline:
   - require: "{package-name}"
 ----
 
-== Configuration
+=== Configuration
 
 TODO
 
-== License
+=== License
 
 MIT
 
