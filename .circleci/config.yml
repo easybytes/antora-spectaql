@@ -19,12 +19,7 @@ jobs:
 workflows:
   test_and_release:
     jobs:
-      - test:
-          matrix:
-            parameters:
-              version:
-                - 16.1.0
-                - 14.17.0
+      - test
       - release:
           requires:
             - test
