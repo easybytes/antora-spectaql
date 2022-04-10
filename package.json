@@ -18,7 +18,7 @@
     "build": "npm run lint",
     "lint": "eslint lib/**/*.js",
     "lint-fix": "eslint lib/**/*.js --fix",
-    "prepare": "husky install",
+    "prepare": "is-ci || husky install",
     "release": "semantic-release"
   },
   "files": [
@@ -31,6 +31,7 @@
   "dependencies": {
     "@antora/expand-path-helper": "^2.0.0",
     "cheerio": "^1.0.0-rc.10",
+    "is-ci": "^3.0.1",
     "mime-types": "^2.1.35",
     "spectaql": "^1.0.10",
     "vinyl": "^2.2.1"
