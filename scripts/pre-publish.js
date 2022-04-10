@@ -28,6 +28,7 @@ async function writeMarkdown (asciidoc) {
       return resolve(result)
     };
 
+    console.log( process.env.PATH );
     pandoc(docbook, `-f docbook -t gfm -o ${README_DEST}`, callback)
   })
 
